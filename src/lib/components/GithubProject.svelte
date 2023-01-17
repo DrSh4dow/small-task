@@ -8,15 +8,17 @@
 	export let forks: number;
 </script>
 
-<article class="bg-brand-dirty-grey p-5 rounded-[4px] max-w-xl">
-	<img src="/images/github-icon.png" alt="github icon" class="mb-3" />
-	<div class="flex items-center justify-start mb-2">
+<article class="bg-brand-dirty-grey p-5 rounded-[4px] max-w-xl flex gap-3 flex-wrap">
+	<div class="w-full">
+		<img src="/images/github-icon.png" alt="github icon" />
+	</div>
+	<div class="flex items-center justify-start">
 		<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path fill-rule="evenodd" clip-rule="evenodd" d={bookmark} fill="#B3B3B3" />
 		</svg>
 		<h2 class="font-medium text-lg text-brand-black">{name}</h2>
 	</div>
-	<h5 class="text-brand-dark-grey text-sm font-medium mb-3">{description}</h5>
+	<h5 class="text-brand-dark-grey text-sm font-medium">{description}</h5>
 	<div class="flex gap-5">
 		<figure>
 			<svg
